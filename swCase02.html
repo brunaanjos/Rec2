@@ -9,10 +9,23 @@
     */
 
     //Entrada
-
+const assunto =(prompt("Qual o assunto mais difícil da disciplina de Programação ?"))
 
     //Processamento
-
+    switch (assunto) {
+    case "VO":
+      document.write(`Primeiro`);
+      break;
+    case "ED":
+      document.write(`Segundo`);
+      break;
+    case "RE":
+      document.write(`Terceiro`);
+      break;
+    default:
+      document.write(`Assunto Invalido`);
+      break;
+  }
 
     //Saída
 

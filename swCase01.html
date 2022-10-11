@@ -1,7 +1,7 @@
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 <script>
-    // SWITCH CASE SWITCH CASE SWITCH CASE SWITCH CASE
-    /*
+  // SWITCH CASE SWITCH CASE SWITCH CASE SWITCH CASE
+  /*
     Problema: Peça para o usuário informar qual a sua cidade de nascimento, que poderá ser Joinville (JL), São Francisco do Sul (SF), Araquari (AR) ou Balneário Barra do Sul (BS).
     De acordo com a resposta fornecida pelo usuário, apresente a mensagem correspondente, conforme estabelecido abaixo:
     Caso seja Joinville (JL), o programa mostrará a mensagem: "Urbano".
@@ -10,12 +10,26 @@
     Caso seja Balneário Barra do Sul (BS), o programa mostrará a mensagem "Praia".
     */
 
-    //Entrada
+  //Entrada
+  const cidade = (prompt("Qual a sua cidade de nascimento ?"));
 
-
-    //Processamento
-
-
-    //Saída
-
+  //Processamento
+  switch (cidade) {
+    case "JL":
+      document.write(`Você é Urbano`);
+      break;
+    case "SF":
+      document.write(`Você é da praia`);
+      break;
+    case "AR":
+      document.write(`Você é da Metrópole`);
+      break;
+    case "BS":
+      document.write(`Você é da Praia `);
+      break;
+    default:
+      document.write(`Cidade Invalida`);
+      break;
+  }
+  //Saída
 </script>
